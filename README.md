@@ -1,4 +1,5 @@
 Projeto de Automação de Testes - Rubeus
+
 Este projeto contém a automação de testes funcionais e de interface para as páginas de Certificação e Site Principal da Rubeus, utilizando Cypress.
 
 Tecnologias e Arquitetura
