@@ -1,7 +1,9 @@
 🚀 Projeto de Automação de Testes - Rubeus
+
 Este ecossistema de testes foi desenvolvido para garantir a integridade funcional e a qualidade da experiência do usuário (UX) nas páginas de Certificação e Site Principal da plataforma Rubeus, utilizando o framework Cypress.
 
 🛠️ Tecnologias e Arquitetura
+
 Framework: Cypress para testes de ponta a ponta (E2E).
 
 Massa de Dados: Integração com Faker via UsuarioFactory para geração de dados dinâmicos e realistas, evitando o vício de testes com dados estáticos.
