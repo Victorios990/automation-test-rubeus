@@ -16,19 +16,27 @@ Arquitetura de Suporte: Centralização de imports e constantes de mensagens, ga
 1. Instalar as dependências do projeto:
 
 Bash
+
 npm install
+
 2. Abrir a interface interativa do Cypress:
 
 Bash
+
 npx cypress open
+
 3. Executar os testes em modo headless (terminal):
 
 Bash
+
 npx cypress run
+
 🐞 Bugs Identificados e Automatizados
+
 Os scripts foram desenhados para capturar falhas críticas que impactam diretamente a conversão e a usabilidade:
 
 🎓 Página de Certificação
+
 Fluxo de Dados: Identificada a ausência de uma validação rígida de "Base Legal", o que gera inconsistência no bloqueio ou permissão de cadastros.
 
 Erro Crítico de Redirecionamento: O botão principal "Quero me certificar" no rodapé está incorretamente apontando para o Google, desviando o lead do funil de vendas.
@@ -38,6 +46,7 @@ Inconsistência Social: O ícone do YouTube está erroneamente vinculado a um pe
 Débito Técnico em UI: Presença de elementos estáticos (setas e botões) que não possuem ação e utilizam IDs duplicados no DOM, violando boas práticas de desenvolvimento web.
 
 🌐 Site Principal
+
 Troca de Redirecionamento: O ícone do YouTube no menu superior redireciona para a rede social X (Twitter).
 
 Identidade Visual Desatualizada: O rodapé ainda referencia a "Página do Twitter", apesar de o link já estar atualizado para o novo domínio "x.com".
@@ -45,6 +54,7 @@ Identidade Visual Desatualizada: O rodapé ainda referencia a "Página do Twitte
 URLs Genéricas: Múltiplos botões de eventos distintos (Vestibular, Palestras) convergem para a mesma URL de inscrição, prejudicando o rastreio de origem do interesse do aluno.
 
 📂 Estrutura do Projeto
+
 cypress/e2e/GUI/: Suítes de testes organizadas por domínio de negócio.
 
 cypress/fixtures/pages/: Dicionário de seletores mapeados por ID, Classe e Atributos.
