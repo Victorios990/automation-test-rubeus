@@ -1,28 +1,46 @@
-# Processo Seletivo Qualidade - Rubeus
+# Projeto de Automação de Testes - Rubeus
 
-Este repositório contém a resolução do teste prático para a vaga de QA na **Rubeus**. O projeto engloba a identificação de melhorias, reporte de bugs e a automação de testes E2E para as páginas de exemplo fornecidas.
+Este projeto contém a automação de testes funcionais e de interface para as páginas de Certificação e Site Principal da Rubeus, utilizando **Cypress**.
 
-## 🚀 Objetivo do Projeto
-Analisar a qualidade das páginas propostas, classificando as ocorrências conforme as diretrizes do teste (Tipo, Classificação e Prioridade) e implementar testes automatizados para garantir a estabilidade das funcionalidades.
+Tecnologias e Arquitetura
 
-## 🛠️ Tecnologias Utilizadas
-* **Framework de Automação:** [Cypress](https://www.cypress.io/)
-* **Linguagem:** JavaScript / TypeScript (escolha o que for usar)
-* **Relatórios:** (Ex: Mochawesome ou o próprio GitHub Issues)
+* **Framework:** Cypress
+* **Massa de Dados:** Faker para geração de dados dinâmicos (Nomes, E-mails e Telefones).
+* **Padrão de Projeto:** Fixtures para mapeamento de elementos (Separation of Concerns).
+* **Arquitetura:** Centralização de imports e mensagens para facilitar a manutenção.
 
-## 📋 Estrutura de Classificação
-Seguindo as instruções do processo, as ocorrências foram reportadas baseadas em:
-- **Tipo:** Correção, Nova Funcionalidade, Melhoria.
-- **Classificação:** Utilidade, Usabilidade, Desejabilidade.
-- **Prioridade:** Baixa, Média, Alta.
+Como Executar
 
-## 🏗️ Estrutura do Repositório
-* `cypress/e2e/`: Scripts de teste automatizados.
-* `cypress/fixtures/`: Massas de dados para os testes.
-* `cypress/support/`: Comandos personalizados e configurações globais (Page Objects).
-* `reports/`: (Opcional) Documentação técnica ou evidências de bugs encontrados.
-
-## 🔧 Como Executar os Testes
-1. Clone o repositório:
+1. **Instalar dependências:**
    ```bash
-   git clone [https://github.com/Victorios990/automation-test-rubeus.git]
+   npm install
+Abrir o Cypress:
+
+Bash
+npx cypress open
+Executar em modo Headless:
+
+Bash
+npx cypress run
+
+#Bugs Identificados e Automatizados
+Abaixo, os problemas críticos detectados pelos scripts durante a execução:
+
+#Página de Certificação
+
+Fluxo de Dados: Ausência de validação de "Base Legal" permitindo/bloqueando cadastros de forma inconsistente.
+Redirecionamento Crítico: O botão "Quero me certificar" no rodapé redireciona o usuário para o Google.
+Redirecionamento Social: O ícone do YouTube está configurado para abrir o perfil do TikTok.
+UX/UI: Elementos como "Saiba mais" e setas de navegação são estáticos (sem ação) e possuem IDs duplicados no DOM.
+
+#Site Principal
+
+Redirecionamento Social: O ícone do YouTube no menu superior está configurado para o redirecionar para o X (Twitter).
+Conteúdo Desatualizado: Rodapé exibe o texto "Página do Twitter", enquanto o link já aponta para o domínio "x.com".
+Inconsistência de Redirecionamento: Botões de "Inscreva-se agora" em diferentes eventos levam para a mesma URL genérica.
+
+#Estrutura do Projeto
+
+cypress/e2e/GUI/: Scripts de teste divididos por domínio.
+cypress/fixtures/pages/: Mapeamento de seletores (IDs e Classes).
+cypress/support/: Factories para geração de massa de dados e comandos personalizados.

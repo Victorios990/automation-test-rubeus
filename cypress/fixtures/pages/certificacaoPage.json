@@ -1,0 +1,16 @@
+{
+  "certificacao": {
+    "saibaMais": "span[style*='font-size:18px']",
+    "linkCertificarRodape": "#ixy3u1",
+    "campoNome": "input[name='pessoa.nome']",
+    "seletorPais": ".iti__flag.iti__br",
+    "campoTelefone": "input[name='pessoa.telefonePrincipal']",
+    "campoEmail": "input[name='pessoa.emailPrincipal']",
+    "botaoAvancar": ".rbBtnAdvance",
+    "alertaBaseLegal": ".toast, .alert-danger",
+    "setaEsquerda": "#i27rwk",
+    "setaMeio": "#i5ddsq",
+    "setaDireita": "#imis54",
+    "youtubeIcon": "#inm1sk"
+  }
+}
