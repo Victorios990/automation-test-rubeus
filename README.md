@@ -1,7 +1,3 @@
-Com certeza, Victor! Vou restaurar os emojis para dar aquele visual mais moderno e profissional (estilo "GitHub Pro") e refinar as explicações técnicas para valorizar ainda mais o seu trabalho de QA.
-
-Aqui está a versão aprimorada do README.md:
-
 🚀 Projeto de Automação de Testes - Rubeus
 Este ecossistema de testes foi desenvolvido para garantir a integridade funcional e a qualidade da experiência do usuário (UX) nas páginas de Certificação e Site Principal da plataforma Rubeus, utilizando o framework Cypress.
 
