@@ -1,0 +1,30 @@
+{
+  "site": {
+    "atendimentoMenuSuperior": "span:contains('Atendimento')",
+    "whatsappMenuSuperior": "span:contains('WhatsApp')",
+    "linkedinMenuSuperior": "#if4le",
+    "facebookMenuSuperior": "#imfgl",
+    "youtubeIconMenuSuperior": "#i1gjj",
+    "twitterMenuSuperior": "#i1gjj",
+    "youtubeMenuSuperior": "#iu2np",
+    "institucionalMenuSuperior": "span:contains('INSTITUCIONAL')",
+    "bibliotecaMenuSuperior": "span:contains('BIBLIOTECA')",
+    "nossosDiferenciais": "span:contains('NOSSOS DIFERENCIAIS')",
+    "eventos": "span:contains('EVENTOS')",
+    "falarComConsultor": "b:contains('FALAR COM CONSULTOR')",
+    "bannerImagem": "#iwhtfk",
+    "bannerDot1": "span[onclick*='currentSlide(1)']",
+    "bannerDot2": "span[onclick*='currentSlide(2)']",
+    "bannerDot3": "span[onclick*='currentSlide(3)']",
+    "vestibular2022": "#i6b9dk",
+    "palestraDezFev": "#iwmzne",
+    "palestraQuatorze": "#izq1hh",
+    "palestraVinteUm": "#itzwfq",
+    "campoNome": "input[name='pessoa.nome']",
+    "campoEmail": "input[name='pessoa.emailPrincipal']",
+    "campoTelefone": "input[name='pessoa.telefonePrincipal']",
+    "botaoConcluir": "#igdkpz",
+    "iconeTwitterTexto": "span:contains('página do Twitter')",
+    "linkXFooter": "#in1aw2"
+  }
+}
