@@ -1,52 +1,54 @@
-Projeto de Automação de Testes - Rubeus
+Com certeza, Victor! Vou restaurar os emojis para dar aquele visual mais moderno e profissional (estilo "GitHub Pro") e refinar as explicações técnicas para valorizar ainda mais o seu trabalho de QA.
 
-Este projeto contém a automação de testes funcionais e de interface para as páginas de Certificação e Site Principal da Rubeus, utilizando Cypress.
+Aqui está a versão aprimorada do README.md:
 
-Tecnologias e Arquitetura
-Framework: Cypress
+🚀 Projeto de Automação de Testes - Rubeus
+Este ecossistema de testes foi desenvolvido para garantir a integridade funcional e a qualidade da experiência do usuário (UX) nas páginas de Certificação e Site Principal da plataforma Rubeus, utilizando o framework Cypress.
 
-Massa de Dados: Faker para geração de dados dinâmicos (Nomes, E-mails e Telefones).
+🛠️ Tecnologias e Arquitetura
+Framework: Cypress para testes de ponta a ponta (E2E).
 
-Padrão de Projeto: Fixtures para mapeamento de elementos (Separation of Concerns).
+Massa de Dados: Integração com Faker via UsuarioFactory para geração de dados dinâmicos e realistas, evitando o vício de testes com dados estáticos.
 
-Arquitetura: Centralização de imports e mensagens para facilitar a manutenção.
+Padrão de Projeto (Fixtures): Implementação de Separation of Concerns (Separação de Preocupações), onde todos os seletores CSS/IDs estão centralizados em arquivos JSON para facilitar a manutenção.
 
-Como Executar
-Instalar dependências:
+Arquitetura de Suporte: Centralização de imports e constantes de mensagens, garantindo um código limpo (Clean Code) e escalável.
+
+💻 Como Executar
+1. Instalar as dependências do projeto:
 
 Bash
 npm install
-Abrir o Cypress:
+2. Abrir a interface interativa do Cypress:
 
 Bash
 npx cypress open
-Executar em modo Headless:
+3. Executar os testes em modo headless (terminal):
 
 Bash
 npx cypress run
-Bugs Identificados e Automatizados
-Abaixo estão listados os problemas críticos detectados pelos scripts durante a execução:
+🐞 Bugs Identificados e Automatizados
+Os scripts foram desenhados para capturar falhas críticas que impactam diretamente a conversão e a usabilidade:
 
-Página de Certificação
-Fluxo de Dados: Ausência de validação de "Base Legal" permitindo ou bloqueando cadastros de forma inconsistente.
+🎓 Página de Certificação
+Fluxo de Dados: Identificada a ausência de uma validação rígida de "Base Legal", o que gera inconsistência no bloqueio ou permissão de cadastros.
 
-Redirecionamento Crítico: O botão "Quero me certificar" localizado no rodapé redireciona o usuário para o Google.
+Erro Crítico de Redirecionamento: O botão principal "Quero me certificar" no rodapé está incorretamente apontando para o Google, desviando o lead do funil de vendas.
 
-Redirecionamento Social: O ícone do YouTube está configurado para abrir o perfil do TikTok.
+Inconsistência Social: O ícone do YouTube está erroneamente vinculado a um perfil do TikTok.
 
-UX/UI: Elementos como "Saiba mais" e setas de navegação são estáticos (sem ação) e possuem IDs duplicados no DOM.
+Débito Técnico em UI: Presença de elementos estáticos (setas e botões) que não possuem ação e utilizam IDs duplicados no DOM, violando boas práticas de desenvolvimento web.
 
-Site Principal
-Redirecionamento Social: O ícone do YouTube no menu superior está configurado para redirecionar para o X (Twitter).
+🌐 Site Principal
+Troca de Redirecionamento: O ícone do YouTube no menu superior redireciona para a rede social X (Twitter).
 
-Conteúdo Desatualizado: O rodapé exibe o texto "Página do Twitter", enquanto o link já aponta para o domínio "x.com".
+Identidade Visual Desatualizada: O rodapé ainda referencia a "Página do Twitter", apesar de o link já estar atualizado para o novo domínio "x.com".
 
-Inconsistência de Redirecionamento: Botões de "Inscreva-se agora" em diferentes eventos levam para a mesma URL genérica.
+URLs Genéricas: Múltiplos botões de eventos distintos (Vestibular, Palestras) convergem para a mesma URL de inscrição, prejudicando o rastreio de origem do interesse do aluno.
 
-Estrutura do Projeto
-cypress/e2e/GUI/: Scripts de teste divididos por domínio de negócio.
+📂 Estrutura do Projeto
+cypress/e2e/GUI/: Suítes de testes organizadas por domínio de negócio.
 
-cypress/fixtures/pages/: Arquivos JSON contendo o mapeamento de seletores (IDs e Classes).
+cypress/fixtures/pages/: Dicionário de seletores mapeados por ID, Classe e Atributos.
 
-cypress/support/: Factories para geração de massa de dados e comandos personalizados.
-cypress/support/: Factories para geração de massa de dados e comandos personalizados.
+cypress/support/: Lógica de suporte, incluindo a Factory para criação de perfis de usuários e centralização de mensagens do sistema.
